@@ -1,0 +1,92 @@
+.ability-list-section {
+    padding-top: 94px;
+}
+.ability-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+.ability-item {
+    margin-left: 30px; 
+}
+.ability-item::before {
+    content: '';
+    display: block;
+    height: 120px;
+    background-color:#F5F4FA;
+    border-radius: 4px;
+    background-repeat:no-repeat;
+    background-position: center;
+}
+.ability-item:nth-child(1)::before {
+    background-image: url(../image/photo-secondary/occupation-group.svg);
+}
+.ability-item:nth-child(2)::before {
+    background-image: url(../image/photo-secondary/occupation-clock.svg);
+}
+.ability-item:nth-child(3)::before {
+    background-image: url(../image/photo-secondary/occupation-diagram.svg);
+}
+.ability-item:nth-child(4)::before {
+    background-image: url(../image/photo-secondary/occupation--astronaut.svg);
+}
+.ability-item:nth-child(4n + 1) {
+    margin-left: 0px;
+}
+.ability-heading {
+    color: var(--secondary--text--color);
+    line-height: 0.875;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    margin-top: 30px;
+}
+.ability-text {
+    padding-top: 10px;
+    margin-right: 0px;
+    width: 270px;
+    height: 75px;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+.image-pading {
+    padding-top: 95px;
+    padding-bottom: 95px;
+}
+.our-classes {
+    margin-bottom: 50px;
+    text-align: center;
+}
+.image {
+    display: flex;
+    flex-wrap: wrap;
+}
+.our-image {
+    margin-top: 50px;
+    margin-left: 30px;
+    position: relative;
+}
+.our-absolute-text {
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    width: 100%;
+    background-color: rgba(47, 48, 58, 0.8);
+    height: 70px;
+    text-align: center;
+    padding-top: 27px;
+}
+.our-text {
+    color: var(--white--color);
+    font-family: Roboto;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase
+}
+.our-image:nth-child(3n + 1) {
+margin-left: 0px;
+}
