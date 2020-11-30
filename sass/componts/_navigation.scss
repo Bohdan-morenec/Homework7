@@ -1,0 +1,42 @@
+.navigat {
+    display: inline-flex;
+    align-items: center;
+    margin-right: auto;
+}
+.menu {
+    display: inline-flex;
+}
+.nav-indent {
+    margin-right: 50px;
+&:last-child {
+margin-right: 0px;
+}
+}
+.text-nav {
+    position: relative;
+    color: var(--secondary--text--color);
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    
+}
+.text-nav::after {
+    position: absolute;
+    content: "";
+    border: 2px solid var(--accent-color);
+    border-radius:4px;
+    left: 0px;
+    right: 0;
+    display: block;
+    margin-top: 31px;
+    background-color:var(--accent-color);
+    pointer-events: none;  
+    opacity: 0;
+    transition-duration: 250ms;
+}
+.color-here::after {
+    opacity: 1;
+}
+.text-nav:hover::after,
+ .text-nav:focus::after{
+     opacity: 1;
+ }

@@ -1,0 +1,16 @@
+.header {
+    padding-top: 28px;
+    padding-bottom: 28px;
+    border: 1px solid #ECECEC;
+}
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content:flex-end;
+}
+ .color-here {
+    color: var(--accent-color);
+}   
+.inline-block li {
+    display: inline-block;
+}

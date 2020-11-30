@@ -1,0 +1,47 @@
+.Regular-ustomers-container {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+.Regular-ustomers-image {
+    fill: var(--main--text--color);
+}
+.Regular-ustomers { 
+    text-align: center;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+    letter-spacing: 0.03em;
+    color: #212121;
+}
+.Regular-ustomers-list {
+    display: flex;
+    margin-top: 50px;
+}
+.Regular-ustomers-item {
+    margin-right: 30px;
+&:last-child {
+    margin-right: 0px;
+}
+}
+.Regular-ustomers-link {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border: 1px solid #AFB1B8;
+    box-sizing: border-box;
+    border-radius: 4px;
+    width: 170px;
+    height:90px;
+    border-radius: 4px;
+    transition-duration: 250ms;
+&:hover svg,
+&:focus svg {
+    fill: var(--accent-color);
+}
+&:hover,
+&:focus {
+    border: solid var(--accent-color);
+}
+}

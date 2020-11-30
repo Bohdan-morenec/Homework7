@@ -1,0 +1,77 @@
+.footer {
+    background-color: var(--background--color);
+    font-style: normal;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.footer-container {
+    display: flex;
+}
+.footer-logo {
+    font-family: Raleway;
+    color: var(--white--color);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    font-style: normal;
+}
+.footer-address{
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    margin-top: 20px;
+}
+.map {
+    color: var(--white--color);
+    font-style: normal;
+}
+.footer-link {
+    color: rgba(255, 255, 255, 0.6);
+    display: block;
+    margin-top: 9px;
+    font-style: normal;
+}
+.social-network-footer-div {
+    margin-left: 70px;
+}
+.footer-join {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--white--color);
+}
+.social-network-footer-list {
+    display: flex;
+    margin-top: 20px;
+}
+.social-network-footer-item:not(:last-child) {
+    margin-right: 10px;
+}
+.social-network-footer-link {
+    width: 45px;
+    height: 45px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-radius: 50%;
+    background-color:rgba(255, 255, 255, 0.1);
+    transition-duration: 250ms;
+&:hover .social-network-footer,
+&:focus .social-network-footer {
+    fill: var(--white--color);
+}
+&:hover,
+&:focus {
+    background-color:var(--accent-color);
+}
+}
+.social-network-footer {
+    height: 20px;
+    width: 20px;
+    fill: var(--white--color);
+}

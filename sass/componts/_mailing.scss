@@ -1,0 +1,67 @@
+.mailing-box {
+    margin-left: 93px;
+}
+.mailing {
+    width: 358px;
+    height: 50px;
+    margin-top:20px;
+    padding-left:15px;
+    outline: none;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-sizing: border-box;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color:#2F303A;
+    color:var(--white--color);
+&:focus::placeholder {
+    color: var(--white--color);
+}
+&:focus {
+    color: var(--white--color);
+    border: 1px solid var(--accent-color);   
+}
+}
+.btn-mailing {
+    position: relative;
+    width: 200px;
+    height: 50px;
+    margin-left: 12px;
+    padding-right:63px ;
+    color: var(--white--color);
+    background-color: var(--accent-color);
+    transition-duration: 250ms;
+    border: none;
+    border: radius 4px;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+&:focus,
+&:hover{
+    color: var(--accent-color);
+    background-color: var(--white--color);
+}
+&:focus .mailing-icons,
+&:hover .mailing-icons{
+    fill: var(--accent-color);
+}
+}
+.hero-button:focus,
+.hero-button:hover {
+    color: var(--accent-color);
+    background-color: var(--white--color);
+}
+.mailing-icons {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    margin-bottom:16px;
+    margin-left: 10px;
+    fill: var(--white--color);
+    transition-duration: 250ms;
+}
+.mailing:-webkit-autofill,
+.mailing:-webkit-autofill:hover, 
+.mailing:-webkit-autofill:focus {
+    -webkit-text-fill-color: var(--white--color);
+    -webkit-box-shadow: 0 0 0px 1000px #2F303A inset;
+}
